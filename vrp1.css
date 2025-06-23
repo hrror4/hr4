@@ -1,0 +1,61 @@
+
+body {
+  background: #111;
+  padding: 2rem;
+  font-family: 'Thasadith', sans-serif;
+}
+
+.a {
+  user-select: text;
+  position: relative;
+  margin: auto;
+  max-width: 400px;
+  height: 100%;
+  padding: 2.5rem 3rem;
+  font: bold 13.5px Amiri, Thasadith, sans-serif;
+  color: #bbb;
+  text-align: center;
+  line-height: 1.7;
+  border-radius: 6px;
+}
+
+.b {
+  margin: 2.5rem 0 .35rem;
+  font: 12px "Cactus Classical Serif", Thasadith, serif;
+}
+
+.c {
+  padding: 0 0 10px;
+  font-size: 11.5px;
+  border-radius: 3px;
+}
+
+.d {
+  opacity: .95;
+  margin: auto;
+  filter: contrast(1.1);
+  background-blend-mode: screen;
+  background: center/cover url(https://iili.io/FqV2W6Q.png), repeat 50% url(https://iili.io/FHHBUTx.png);
+  aspect-ratio: 16/6;
+  max-width: 400px;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 70px inset hsla(0,10%,40%,.25);
+}
+
+.e {
+  margin: 1rem 0 .44rem;
+  text-align: justify;
+}
+
+.f {
+  background: center/cover url(https://iili.io/Fd9YFQS.png);
+  aspect-ratio: 20/2.5;
+  margin: auto;
+  width: 200px;
+  border: 1px solid #222;
+  opacity: .8;
+}
+
+sub {
+  color: #555;
+}
