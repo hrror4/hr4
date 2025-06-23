@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iMessage Chat UI Animated</title>
+  <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      font-family: 'Thasadith', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 1rem;
+      color: #fff;
+    }
+
+    .chat-container {
+      background-color: #1c1c1e;
+      border-radius: 16px;
+      padding: 1rem;
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      animation: fadeBounce 0.8s ease-out forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    @keyframes fadeBounce {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(-8px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .message {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+
+    .message.sent {
+      justify-content: flex-end;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .bubble {
+      max-width: 70%;
+      padding: 0.75rem 1rem;
+      border-radius: 20px;
+      position: relative;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .sent .bubble {
+      background-color: #0a84ff;
+      color: #fff;
+      border-bottom-right-radius: 4px;
+    }
+
+    .received .bubble {
+      background-color: #3a3a3c;
+      color: #fff;
+      border-bottom-left-radius: 4px;
+    }
+
+    .meta {
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 0.25rem;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    
+    <div class="message received">
+      <img src="https://i.pravatar.cc/36?img=1" alt="Jenesis" class="avatar">
+      <div class="info">
+        <div class="name">Jenesis</div>
+        <div class="bubble">สวัสดี Vlad วันนี้เป็นยังไงบ้าง?</div>
+        <div class="meta">10:02 AM</div>
+      </div>
+    </div>
+
+    <div class="message sent">
+      <div class="info" style="align-items: flex-end;">
+        <div class="name">Vlad</div>
+        <div class="bubble">สบายดี ขอบคุณที่ถามนะ</div>
+        <div class="meta">10:03 AM</div>
+      </div>
+    </div>
+
+    <div class="message received">
+      <img src="https://i.pravatar.cc/36?img=1" alt="Jenesis" class="avatar">
+      <div class="info">
+        <div class="name">Jenesis</div>
+        <div class="bubble">ดีใจที่ได้ยินแบบนั้น!</div>
+        <div class="meta">10:04 AM</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
