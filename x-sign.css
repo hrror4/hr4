@@ -4,8 +4,7 @@ body {
   font-size: 13px;
   color: #ccc;
   line-height: 1.4;
-  padding: 40px;
-}
+  padding: 40px}
 
 .tweet {
   background-color: black;
@@ -14,46 +13,36 @@ body {
   padding: 16px;
   max-width: 400px;
   margin: auto;
-  border: 1px solid #222;
-}
+  border: 1px solid #222}
 
 .tweet-header {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
-}
+  margin-bottom: 12px}
 
 .avatar {
-  width: 42px;
-  height: 42px;
+  width: 42px; 
+  height: 42px; 
   border-radius: 50%;
-  margin-right: 10px;
-  object-fit: cover;
-}
+  margin-right: 10px; object-fit: cover}
 
 .user-info {
   display: flex;
   flex-direction: column;
-  font-size: 12.5px;
-}
+  font-size: 12.5px}
 
 .name {
   font-weight: 500;
-  display: inline;
-}
+  display: inline}
 
-.handle {
-  color: #777;
-}
+.handle {color: #777}
 
 .more {
   margin-left: auto;
   color: #777;
   font-size: 20px;
-  transform: translateY(-5px);
-}
+  transform: translateY(-5px)}
 
 .content {
   line-height: 1.45;
-  color: #bbb;
-}
+  color: #bbb}
