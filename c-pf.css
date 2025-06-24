@@ -1,0 +1,121 @@
+body {
+  font-family: Amiri, Thasadith, serif;
+  font-size: 11px;
+  color: #bababa;
+  line-height: 1.4;
+  background: black;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  user-select: none;
+  overflow: hidden;
+  filter: grayscale(10%) contrast(1.1) brightness(1.05);
+  border-radius: 9px;
+  image-rendering: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header-bg {
+  background: top/cover url("https://iili.io/3LGsENI.png");
+  -webkit-mask-image: -webkit-gradient(linear, center 90%, center 100%, from(black), to(transparent));
+  position: relative;
+  z-index: 1;
+}
+
+.video-placeholder {
+  aspect-ratio: 18/8;
+  max-width: 100%;
+  overflow: hidden;
+  filter: grayscale(70%) brightness(1.12);
+  pointer-events: none;
+  margin-top: -70px;
+  -webkit-mask-image: -webkit-gradient(linear, center 60%, center 100%, from(black), to(transparent));
+}
+
+.profile-wrapper {
+  z-index: 2;
+  position: relative;
+  margin-top: -245px;
+  padding: 120px 40px;
+}
+
+.avatar-frame {
+  background: center/cover url("https://iili.io/3PwWMWx.jpg"),
+              top/cover url("https://iili.io/3PlZRou.png"),
+              center/cover url("https://iili.io/3Q14hOv.png");
+  aspect-ratio: 1/1.05;
+  filter: grayscale(20%) contrast(1.07) brightness(1);
+  -webkit-mask-image: -webkit-gradient(linear, center 70%, center 100%, from(black), to(transparent));
+  margin: auto;
+}
+
+.title-banner {
+  font: 77px "Cinzel Decorative";
+  background: linear-gradient(to bottom, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #eee;
+  position: absolute;
+  margin: -80px 0 0 -55px;
+}
+
+.profile-info {
+  padding-left: 5px;
+  user-select: text;
+  background-image: url("https://iili.io/3PlZRou.png"), linear-gradient(0deg, rgba(46,46,46,.1) 50%, rgba(227,227,227,.1) 100%);
+  border: 1px solid #222;
+  border-radius: 11px;
+  margin-top: -2px;
+  padding: 20px 20px 14px;
+  filter: brightness(1.15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0rem 1.375rem 10rem 0rem rgba(0,0,0,.31);
+}
+
+.name-block {
+  font-size: 14.5px;
+  color: #ddd;
+  margin: 5px 0 5px -5px;
+}
+
+.details {
+  margin-left: 15px;
+}
+
+.bio-box, .ps-box, .tmi-box {
+  user-select: text;
+  position: relative;
+  margin: 25px 0 0 100px;
+  box-sizing: border-box;
+  background-image: url("https://iili.io/3PlZRou.png"), linear-gradient(0deg, rgba(46,46,46,.1) 50%, rgba(227,227,227,.1) 100%);
+  color: #999;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,.05);
+  padding: 20px 20px 16px;
+  box-shadow: 0 15px 50px rgba(0,0,0,.7);
+}
+
+.ps-box::before {
+  content: "PS .";
+}
+
+.tmi-box::before {
+  content: "TMI .";
+}
+
+.ps-box::before, .tmi-box::before {
+  position: absolute;
+  top: -12px;
+  right: 15px;
+  background: black;
+  border-radius: 4px;
+  border: 1px solid #222;
+  padding: 3px 6px 2px 8px;
+  font-size: 11.5px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+}
