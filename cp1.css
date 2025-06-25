@@ -12,7 +12,7 @@ body {background: black; font-family: Amiri, Thasadith, serif; font-size: 11px; 
 
 .m-box {position: relative; margin: auto; max-width: 590px; height: 100%; background: #020202; border: 1px solid #222; box-shadow: inset .0625em .0625em .0625em rgba(100,100,100,.5), inset -.0625em -.0625em .0625em rgba(70,70,70,.5), .125em .125em .25em rgba(0,0,0,.8)}
 
-.h-cv {position: relative; box-sizing: border-box; margin: auto; filter: grayscale(20%) contrast(1.07) brightness(1); background-blend-mode: screen; background: top/cover url(https://iili.io/3PlZRou.png), center/cover url(https://iili.io/3Q14hOv.png); aspect-ratio: 1/1.05; filter: grayscale(20%) contrast(1.07) brightness(1); -webkit-mask-image: -webkit-gradient(linear, center 70%, center 100%, from(black), to(transparent))}
+.h-cv {position: relative; box-sizing: border-box; margin: auto; background-blend-mode: screen; background: center/cover url(), top/cover url(https://iili.io/3PlZRou.png), center/cover url(https://iili.io/3Q14hOv.png); aspect-ratio: 1/1.05; filter: grayscale(20%) contrast(1.07) brightness(1); -webkit-mask-image: -webkit-gradient(linear, center 70%, center 100%, from(black), to(transparent))}
 
 .i-box {position: relative; z-index: 2; margin-top: -80px; padding: 35px 40px 40px; font: 13.5px Amiri, Thasadith; font-weight: 700; line-height: 1.6}
 
@@ -40,7 +40,7 @@ body {background: black; font-family: Amiri, Thasadith, serif; font-size: 11px; 
 
 .t-bg {position: absolute; filter: blur(2px); font: bold 44px Cinzel Decorative; margin: -35px 0 -25px -40px}
 
-.scrollbar {user-select: text; position: relative; overflow: hidden;  overflow-y: hidden; width: auto; height: 285px}
+.scrollbar {font-family: Amiri, Thasadith, serif; font-size: 11px; color: #bababa; line-height: 1.4; user-select: text; position: relative; overflow: hidden;  overflow-y: hidden; width: auto; height: 285px}
 .scrollbar::-webkit-scrollbar {display: none}
 
 .scrb-gd {width: auto; overflow: auto; position: absolute; top: -5px; bottom: -5px; padding: 40px 15px 20px; -webkit-mask-image: -webkit-gradient(linear, center 40%, center 100%, from(black), to(transparent))}
