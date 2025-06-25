@@ -26,13 +26,13 @@ body {background: black}
 
 
 
-.t-name {position: absolute; z-index: 3; font: bold 77px Cinzel Decorative; margin: -80px 0 0 -55px; background: linear-gradient(to bottom, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 5px #eee}
+.t-name {position: absolute; z-index: 3; font: 77px Cinzel Decorative; margin: -80px 0 0 -55px; background: linear-gradient(to bottom, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 5px #eee}
 
 .w-text {font-style: italic; font-size: 14.5px; margin: 5px 0 5px -5px; color: #ddd}
 
-.sw-text {display: inline-block; font-style: italic; color: #eee}
+.sw-text {display: inline-block; font-style: italic; color: #ddd}
 
-.prg {text-indent: 50px; margin: 15px 0}
+.prg {text-indent: 50px; margin: 17px 0}
 
 .p {margin-left: 15px}
 
@@ -42,10 +42,9 @@ body {background: black}
 
 .sq-bt {z-index: 3; position: absolute; bottom: -3px; right: -3px; width: 4px; height: 4px; background: #999; border: 1px solid #999}
 
-.t-bg {position: absolute; filter: blur(2px); font: bold 44px Cinzel Decorative; margin: -35px 0 -25px -40px}
+.t-bg {position: absolute; filter: blur(2px); font: 44px Cinzel Decorative; margin: -35px 0 -25px -40px}
 
-.scrollbar {user-select: text; position: relative; overflow: hidden;  overflow-y: hidden; width: auto; height: 285px}
-.scrollbar::-webkit-scrollbar {display: none}
+.scrollbar {user-select: text; position: relative; overflow: hidden;  overflow-y: hidden; width: auto; height: 282px}
 
 .scrb-gd {width: auto; overflow: auto; position: absolute; top: -5px; bottom: -5px; padding: 40px 15px 20px; -webkit-mask-image: -webkit-gradient(linear, center 40%, center 100%, from(black), to(transparent))}
 
