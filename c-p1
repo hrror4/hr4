@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@400;700;900&family=Karla:ital,wght@0,200..800;1,200..800&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body {background: black; font-family: Amiri, Thasadith, serif; font-size: 11px; color: #bababa; line-height: 1.4; image-rendering: smooth; -webkit-font-smoothing: antialiased}
+body {background: black; font-family: Amiri, Thasadith, serif; font-size: 11px; color: #bababa; line-height: 1.4; image-rendering: smooth; -webkit-font-smoothing: antialiased};
 
 .container {user-select: none; overflow: hidden; background: black; filter: grayscale(10%) contrast(1.1) brightness(1.05); border-radius: 9px}
 
