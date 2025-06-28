@@ -108,3 +108,12 @@
   float: right;
   border-bottom-right-radius: 4px;
 }
+
+.nte-img {
+  background: center/cover url(https://iili.io/Fd9YFQS.png);
+  margin: auto;
+  min-height: 25px;
+  max-width: 200px;
+  border: 1px solid #222;
+  opacity: .8;
+}
