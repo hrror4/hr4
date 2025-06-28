@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cactus+Classical+Serif&family=IBM+Plex+Sans+Thai:wght@400;700&family=Thasadith:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --font-main: Amiri, Thasadith, serif;
+  --font-alt: 'Cactus Classical Serif', Thasadith, serif;
+  --text-color: #bababa;
+  --text-small: 11px;
+  --border-radius: 5px;
+  --hd-img-border: 1px solid #333;
+  --hd-img-boxshadow: 0 0 60px inset hsla(0,10%,40%,.25);
+  --img-border: 1px solid #222;
+  --img-opacity: .8;
+}
+
+.rp-b {
+  user-select: text;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  padding: 3rem 3rem 2.5rem;
+  font: bold 13.5px var(--font-main);
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.7;
+  border-radius: var(--border-radius);
+}
+
+.no {
+  margin: 1.5rem 0 .35rem;
+  font: normal 12px var(--font-alt);
+}
+
+.nte {
+  padding: 0 0 10px;
+  font-size: 11.5px;
+  border-radius: 3px;
+}
+
+.hd-img {
+  margin: auto;
+  background-blend-mode: screen;
+  background: center/cover url(https://iili.io/FqV2W6Q.png), repeat 50% url(https://iili.io/FHHBUTx.png);
+  min-height: 150px;
+  max-width: 400px;
+  border: var(--hd-img-border);
+  box-shadow: var(--hd-img-boxshadow);
+}
+
+.sub {
+  margin-top: 1rem;
+  font-size: var(--text-small);
+  opacity: .7;
+}
+
+.p {
+  margin: 1rem 0 2rem;
+  text-align: justify;
+}
+
+.nte-img {
+  background: center/cover url(https://iili.io/Fd9YFQS.png);
+  margin: auto;
+  min-height: 25px;
+  max-width: 200px;
+  border: var(--img-border);
+  opacity: var(--img-opacity);
+}
