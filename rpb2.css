@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=IBM+Plex+Sans+Thai:wght@400;700&display=swap');
+
+:root {
+  --font-main: IBM Plex Sans Thai, serif;
+  --font-alt: 'Cactus Classical Serif', Thasadith, serif;
+  --text-color: #bababa;
+  --text-small: 11px;
+  --bubble-bg: #2c2c2c;
+  --bubble-color: #fff;
+  --bubble-radius: 20px;
+  --avatar-size: 40px;
+  --gap: 10px;
+}
+
+.rp-b {
+  user-select: text;
+  background: #131313;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  padding: 2.5rem 2.5rem 1.5rem;
+  font: 13.5px var(--font-main);
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.6;
+  border-radius: 7px;
+}
+
+.no {
+  margin: 1.5rem 0 .35rem;
+  font: normal 12px var(--font-alt);
+}
+
+.nte {
+  padding: 0 0 15px;
+  font-size: var(--text-small);
+  border-radius: 3px;
+}
+
+.nte-img {
+  background: center/cover url(https://iili.io/Fd9YFQS.png);
+  margin: 10px auto;
+  min-height: 25px;
+  max-width: 200px;
+  border: 1px solid #222;
+  opacity: .8;
+}
+
+.sub {
+  margin-top: .5rem;
+  font-size: 11px;
+  opacity: .7;
+}
+
+.p {
+  margin: 1rem 0 2rem;
+  text-align: justify;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1.5rem 0;
+  max-width: 100%;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+}
+
+.message.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.message.left .avatar {
+  margin-right: var(--gap);
+}
+
+.message.right .avatar {
+  margin-left: var(--gap);
+}
+
+.message.right .bubble-group {
+  align-items: flex-end;
+}
+
+.avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bubble-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: -2px;
+}
+
+.bubble {
+  background-color: var(--bubble-bg);
+  padding: 10px 16px 7.5px;
+  border-radius: var(--bubble-radius);
+  max-width: 80%;
+  width: fit-content;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--bubble-color);
+  word-wrap: break-word;
+}
