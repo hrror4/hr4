@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cactus+Classical+Serif&family=IBM+Plex+Sans+Thai:wght@400;700&family=Thasadith:ital,wght@0,700;1,700&display=swap');
 
 .rp-b {user-select: text;
-  background: rgba(0,0,0,.25);
   margin: auto;
   width: 100%;
   max-width: 400px;
