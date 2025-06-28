@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cactus+Classical+Serif&family=IBM+Plex+Sans+Thai:wght@400;700&family=Thasadith:ital,wght@0,700;1,700&display=swap');
 
 .rp-b {user-select: text;
-  background: black;
+  background: #151515;
   margin: auto;
   width: 100%;
   max-width: 400px;
@@ -23,8 +23,8 @@
 .hd-img {margin: auto;
   background-blend-mode: screen;
   background: center/cover url(https://iili.io/FqV2W6Q.png), repeat 50% url(https://iili.io/FHHBUTx.png);
-  min-height: 150px;
-  max-width: 400px;
+  min-height: 140px;
+  max-width: 370px;
   border: 1px solid #333;
   box-shadow: 0 0 60px inset hsla(0,10%,40%,.25);}
 
@@ -32,7 +32,7 @@
   font-size: 11px;
   opacity: .7;}
 
-.p {margin: 1.5rem 0 1.5rem;
+.p {margin: 1.25rem 0 1.5rem;
   text-align: justify;}
 
 .imessage {max-width: 100%;
