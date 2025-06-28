@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cactus+Classical+Serif&family=IBM+Plex+Sans+Thai:wght@400;700&family=Thasadith:ital,wght@0,700;1,700&display=swap');
+
+.rp-b {user-select: text;
+  background: black;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  padding: 3rem 3rem 1rem;
+  font: bold 13.5px Amiri, Thasadith, serif;
+  color: #bababa;
+  text-align: center;
+  line-height: 1.7;
+  border-radius: 5px}
+
+.no {margin: 1.5rem 0 .35rem;
+  font: normal 12px 'Cactus Classical Serif', Thasadith, serif}
+
+.nte {padding: 0 0 10px;
+  font-size: 11.5px;
+  border-radius: 3px}
+
+.hd-img {margin: auto;
+  background-blend-mode: screen;
+  background: center/cover url(https://iili.io/FqV2W6Q.png), repeat 50% url(https://iili.io/FHHBUTx.png);
+  min-height: 150px;
+  max-width: 400px;
+  border: 1px solid #333;
+  box-shadow: 0 0 60px inset hsla(0,10%,40%,.25)}
+
+.sub {margin-top: 15px;
+  font-size: 11px;
+  opacity: .7}
+
+.p {margin: 1.5rem 0 1.5rem;
+  text-align: justify}
+
+
+.imessage {max-width: 100%;
+  max-width: 400px;
+  padding: 1px 0 0;
+  background: #111;
+  margin: 1.2rem auto;
+  border-radius: 5px;
+  position: relative}
+
+.tstamp {text-align: center;
+  color: #aaa;
+  font-size: 12px;
+  margin: 20px 0 0;
+  line-height: 1.4;
+  font-weight: 400}
+
+.chat {width: 90%;
+  max-width: 400px;
+  padding: 8px 15px;
+  margin: 8px 0;
+  border-radius: 18px;
+  font: 12px 'IBM Plex Sans Thai', sans-serif;
+  line-height: 1.4;
+  text-align: left;
+  display: inline-block;
+  clear: both;
+  word-wrap: break-word}
+
+.left {width: fit-content;
+  background-color: white;
+  color: black;
+  float: left;;
+  border-bottom-left-radius: 4px}
+
+.right {width: fit-content;
+  background-color: #007aff;
+  color: white;
+  float: right;
+  border-bottom-right-radius: 4px}
