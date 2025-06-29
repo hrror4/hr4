@@ -106,6 +106,7 @@
 }
 
 .bubble-group {
+  user-select: text;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -150,7 +151,7 @@
 }
 
 .rp-b {
-  user-select: text;
+  user-select: none;
   margin: auto;
   width: 100%;
   max-width: 400px;
@@ -195,6 +196,7 @@
 }
 
 .p {
+  user-select: text;
   margin: 1rem 0 2rem;
   text-align: justify;
 }
