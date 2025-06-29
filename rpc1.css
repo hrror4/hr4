@@ -106,7 +106,6 @@
 }
 
 .bubble-group {
-  user-select: text;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -196,7 +195,6 @@
 }
 
 .p {
-  user-select: text;
   margin: 1rem 0 2rem;
   text-align: justify;
 }
