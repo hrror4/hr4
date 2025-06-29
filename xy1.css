@@ -18,8 +18,8 @@
   --gap: 15px;
   --avatar-size: 40px;
 
-  --hd-img-main-url: url('https://iili.io/F5hRGQj.jpg');
-  --hd-img-overlay-url: url('https://iili.io/FHHBUTx.png');
+  --xy-img-main-url: url('https://iili.io/F5hRGQj.jpg');
+  --xy-img-overlay-url: url('https://iili.io/FHHBUTx.png');
 
   --bubble-bg: black;
   --bubble-color: #ccc;
@@ -174,9 +174,9 @@
   border-radius: 3px;
 }
 
-.hd-img {
+.xy-img {
   margin: auto;
-  background-image: var(--hd-img-main-url), var(--hd-img-overlay-url);
+  background-image: var(--xy-img-main-url), var(--xy-img-overlay-url);
   background-position: center center, 50% 50%;
   background-repeat: no-repeat, repeat;
   background-size: cover, auto;
