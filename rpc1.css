@@ -119,7 +119,7 @@
 
 .bubble {
   background-color: var(--bubble-bg);
-  padding: 8px 15px 9px;
+  padding: 8px 15px;
   border-radius: var(--bubble-radius);
   max-width: 80%;
   width: fit-content;
