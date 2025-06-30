@@ -11,7 +11,7 @@
   --border-radius: 5px;
   --bubble-radius: 14px;
   --u-img-border: 1px solid #222;
-  --u-img-boxshadow: 0 4px 20px rgba(0,0,0,0.4);
+  --u-img-boxshadow: 0 4px 20px rgba(0,0,0,0.25);
   --img-border: 1px solid #222;
   --img-opacity: 0.8;
 
@@ -48,7 +48,7 @@
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
