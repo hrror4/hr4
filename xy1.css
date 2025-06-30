@@ -3,66 +3,50 @@
 :root {
   --font-main: Amiri, Thasadith, serif;
   --font-alt: 'Cactus Classical Serif', Thasadith, serif;
-  --font-chat: 'IBM Plex Sans Thai', sans-serif;
+  --font-chat: 'IBM Plex Sans Thai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   --text-color: #bababa;
   --text-small: 11px;
 
   --border-radius: 5px;
   --bubble-radius: 14px;
-  --u-img-border: 1px solid #222;
-  --u-img-boxshadow: 0 4px 20px rgba(0,0,0,0.25);
+  --xy-img-border: 1px solid #333;
+  --xy-img-boxshadow: 0 0 60px inset hsla(0,10%,40%,.25);
   --img-border: 1px solid #222;
   --img-opacity: 0.8;
 
   --gap: 15px;
   --avatar-size: 40px;
 
-  --u-img-main-url: url('https://iili.io/F5pBlbS.jpg');
-  --u-img-overlay-url: url('https://iili.io/FHHBUTx.png');
+  --xy-img-main-url: url('https://iili.io/F5hRGQj.jpg');
+  --xy-img-overlay-url: url('https://iili.io/FHHBUTx.png');
 
   --bubble-bg: black;
   --bubble-color: #ccc;
 
   --animation-duration: 1s;
   --animation-easing: ease-out;
-
-  --fade-in-up-duration: 1s;
-  --fade-in-up-easing: ease-out;
-
-  --u-img-hover-blur: 1px;
-  --u-img-hover-bright: 1.1;
-  --u-img-hover-scale: 1.01;
 }
 
 @keyframes fadeInChat {
-  0% { opacity: 0; transform: scale(0.96); }
-  60% { opacity: 0.6; }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(12px); }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes tiltShake {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(1deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(-1deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .chat {
-  user-select: none;
   font-family: var(--font-chat);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
   display: flex;
   flex-direction: column;
   gap: var(--gap);
@@ -72,6 +56,20 @@
   text-align: left;
   transition: color 0.3s ease, background-color 0.3s ease;
   animation: fadeInChat 1.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .message {
@@ -89,7 +87,6 @@
 .message.left .avatar {
   margin-right: var(--gap);
 }
-
 .message.right .avatar {
   margin-left: var(--gap);
 }
@@ -103,12 +100,12 @@
   height: var(--avatar-size);
   border-radius: 50%;
   object-fit: cover;
+  image-rendering: auto;
   filter: drop-shadow(0 0 0.2px rgba(0,0,0,0.05));
   transition: filter 0.3s ease;
 }
 
 .bubble-group {
-  user-select: text;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -122,22 +119,26 @@
 
 .bubble {
   background-color: var(--bubble-bg);
-  padding: 10px 15px 10.5px;
+  padding: 10px 15px 11px;
   border-radius: var(--bubble-radius);
   max-width: 80%;
   width: fit-content;
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 1.4;
   color: var(--bubble-color);
   word-wrap: break-word;
-  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  word-break: break-word;
+  hyphens: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: inline-block;
 }
 
 .bubble.bubble--img {
   background-color: transparent;
   max-width: 100%;
   padding: 4px 0;
+  width: fit-content;
   box-shadow: none;
 }
 
@@ -145,6 +146,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  display: block;
 }
 
 .rp-b {
@@ -152,26 +154,38 @@
   margin: auto;
   width: 100%;
   max-width: 400px;
-  padding: 3rem 3rem 2.5rem;
+  height: 100%;
+  padding: 3rem 3rem 1rem;
   font: bold 13.5px var(--font-main);
   color: var(--text-color);
   text-align: center;
   line-height: 1.7;
   border-radius: var(--border-radius);
-  animation: fadeInUp var(--fade-in-up-duration) var(--fade-in-up-easing) forwards;
 }
 
 .no {
-  user-select: text;
   margin: 1.5rem 0 0.35rem;
   font: normal 12px var(--font-alt);
 }
 
 .nte {
-  user-select: text;
   padding: 0 0 10px;
   font-size: 11.5px;
   border-radius: 3px;
+}
+
+.xy-img {
+  margin: auto;
+  background-image: var(--xy-img-main-url), var(--xy-img-overlay-url);
+  background-position: center center, 50% 50%;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  background-blend-mode: screen;
+  min-height: 150px;
+  max-width: 400px;
+  border: var(--xy-img-border);
+  box-shadow: var(--xy-img-boxshadow);
+  transition: background-image 0.5s ease-in-out;
 }
 
 .sub {
@@ -181,11 +195,8 @@
 }
 
 .p {
-  user-select: text;
   margin: 1rem 0 2rem;
   text-align: justify;
-  opacity: 0.9;
-  transition: opacity 0.5s ease-in;
 }
 
 .nte-img {
@@ -195,26 +206,4 @@
   max-width: 200px;
   border: var(--img-border);
   opacity: var(--img-opacity);
-}
-
-.u-img {
-  margin: auto;
-  background-image: var(--u-img-main-url), var(--u-img-overlay-url);
-  background-position: center, 50% 50%;
-  background-repeat: no-repeat, repeat;
-  background-size: cover, auto;
-  background-blend-mode: screen;
-  min-height: 150px;
-  max-width: 400px;
-  border-radius: 4px;
-  border: var(--u-img-border);
-  box-shadow: var(--u-img-boxshadow);
-  filter: brightness(1.05);
-  transition: filter 0.8s ease-in-out, transform 0.8s ease-in-out;
-  animation: tiltShake 3s infinite ease-in-out;
-}
-
-.u-img:hover {
-  filter: blur(var(--u-img-hover-blur)) brightness(var(--u-img-hover-bright));
-  transform: scale(var(--u-img-hover-scale));
 }
