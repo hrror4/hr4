@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Long+Cang&display=swap');
+
+:root {
+  --font-main: 'Inter', 'Anuphan', sans-serif;
+  --font-display: 'Long Cang', cursive;
+  --bg-dark: rgba(0,0,0,.8);
+  --border: #222;
+  --text-light: #f4f4f4;
+  --text-lightest: #eee;
+  --shadow-lg: rgba(0,0,0,.4) 0px 2px 4px, rgba(0,0,0,.3) 0px 7px 13px -3px, rgba(0,0,0,.2) 0px -3px 0px inset;
+  --shadow-med: 0 2px 2px rgba(0,0,0,.4), inset 0 -3px 6px -2px rgba(0,0,0,.3);
+  --common-gap: 20px;
+  --common-radius: 11px;
+  --common-transition: 0.2s ease;
+  --common-opacity: .85;
+  --common-margin-top: .8rem;
+}
+
+.profile-card {
+  margin: auto;
+  margin-top: 4rem;
+  max-width: 470px;
+  background: radial-gradient(
+    100% 100% at var(--bg-pos, 50% 0%),
+    rgba(9,9,9,0) 0%,
+    rgba(9,9,9,.7) 68.29%,
+    rgb(9,9,9) 100%
+  ) no-repeat, var(--bg-overlay, rgba(182,163,85,.5));
+  padding: 2.5rem 2rem 2.7rem;
+  border-radius: var(--common-radius);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-main);
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: var(--text-lightest);
+  position: relative;
+  user-select: none;
+  animation: fadeIn 1.2s ease;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: var(--common-gap);
+  margin-bottom: -.3rem;
+}
+
+.avatar {
+  width: 130px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background: no-repeat center / cover var(--avatar-url);
+  box-shadow: rgba(50,50,93,.25) 0px 50px 100px -20px, rgba(0,0,0,.3) 0px 30px 60px -30px, rgba(10,37,64,.35) 0px -2px 6px inset;
+  filter: contrast(1.1) brightness(1.1);
+  animation: popIn 1s ease;
+  transition: filter var(--common-transition);
+}
+
+.avatar:hover {
+  filter: brightness(1.15);
+}
+
+.profile-info .label {
+  font-size: 12px;
+}
+
+.profile-info .name {
+  font-family: var(--font-display);
+  font-size: 35px;
+  margin: 5px 0 10px 0;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: var(--common-opacity);
+  margin-top: var(--common-margin-top);
+}
+
+.left-links {
+  display: flex;
+  gap: 15px;
+}
+
+.link-button {
+  background: var(--bg-dark);
+  padding: 5px 15px;
+  border: 1px solid var(--border);
+  border-top: none;
+  color: var(--text-lightest);
+  border-radius: 14px;
+  box-shadow: var(--shadow-med);
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  transition: transform var(--common-transition);
+}
+
+.link-button:hover {
+  transform: scale(1.05);
+}
+
+.small-img {
+  width: 27px;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.ytauto-box {
+  overflow: hidden;
+  margin-top: .3rem;
+  border: 2px solid var(--border);
+  border-top: none;
+  border-radius: 9px;
+  box-shadow: 1px 1px 70px inset hsla(0,10%,50%,.5);
+}
+
+.text-box {
+  user-select: text;
+  background-image: url(https://iili.io/3PlZRou.png), linear-gradient(0deg, rgba(46,46,46,.1) 50%, rgba(227,227,227,.1) 100%);
+  padding: .85rem 1rem;
+  font-size: 13px;
+  text-align: justify;
+  line-height: 1.6;
+  border: 2px solid var(--border);
+  border-top: none;
+  border-radius: 6px;
+  margin-top: .3rem;
+  position: relative;
+}
+
+.symbol {
+  position: absolute;
+  bottom: 15px;
+  left: 49%;
+  font-size: 10px;
+  opacity: .45;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: .5rem;
+  border-radius: 4px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
