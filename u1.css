@@ -52,6 +52,7 @@
 }
 
 .chat {
+  user-select: none;
   font-family: var(--font-chat);
   display: flex;
   flex-direction: column;
@@ -138,6 +139,7 @@
 }
 
 .rp-b {
+  user-select: none;
   margin: auto;
   width: 100%;
   max-width: 400px;
@@ -155,11 +157,13 @@
 }
 
 .no {
+  user-select: text;
   margin: 1.5rem 0 0.35rem;
   font: normal 12px var(--font-alt);
 }
 
 .nte {
+  user-select: text;
   padding: 0 0 10px;
   font-size: 11.5px;
   border-radius: 3px;
@@ -172,6 +176,7 @@
 }
 
 .p {
+  user-select: text;
   margin: 1rem 0 2rem;
   text-align: justify;
 }
