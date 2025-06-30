@@ -19,6 +19,8 @@
 .profile-card {
   margin: auto;
   margin-top: 4rem;
+  box-sizing: border-box;
+  width: 100%;
   max-width: 470px;
   background: radial-gradient(
     100% 100% at var(--bg-pos, 50% 0%),
@@ -89,21 +91,23 @@
   padding: 5px 15px;
   border: 1px solid var(--border);
   border-top: none;
-  color: var(--text-lightest);
+  color: #bbb;
   border-radius: 14px;
   box-shadow: var(--shadow-med);
   text-shadow: 0 1px 1px rgba(0,0,0,.5);
   font-weight: bold;
   font-size: 13px;
   text-decoration: none;
-  transition: transform var(--common-transition);
+  transition: transform var(--common-transition), color var(--common-transition);
 }
 
 .link-button:hover {
   transform: scale(1.05);
+  color: #fff;
 }
 
-.small-img {
+.mr-img {
+  background-image: url(https://iili.io/FnqHOjn.png);
   width: 27px;
   aspect-ratio: 1 / 1;
   background-size: cover;
