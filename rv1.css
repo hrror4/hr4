@@ -17,8 +17,7 @@
 }
 
 .pf-card {
-  margin: auto;
-  margin: 4rem 2rem 2rem;
+  margin: 2rem auto;
   box-sizing: border-box;
   width: 100%;
   max-width: 470px;
