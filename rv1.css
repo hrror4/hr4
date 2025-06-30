@@ -16,7 +16,7 @@
   --common-margin-top: .8rem;
 }
 
-.profile-card {
+.pf-card {
   margin: auto;
   margin-top: 4rem;
   box-sizing: border-box;
@@ -41,7 +41,7 @@
   animation: fadeIn 1.2s ease;
 }
 
-.profile-header {
+.pf-header {
   display: flex;
   align-items: center;
   gap: var(--common-gap);
@@ -63,17 +63,17 @@
   filter: brightness(1.15);
 }
 
-.profile-info .label {
+.pf-info .label {
   font-size: 12px;
 }
 
-.profile-info .name {
+.pf-info .name {
   font-family: var(--font-display);
   font-size: 35px;
   margin: 5px 0 10px 0;
 }
 
-.profile-links {
+.pf-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,7 +130,7 @@ a, a:visited, a:active {
   box-shadow: 1px 1px 70px inset hsla(0,10%,50%,.5);
 }
 
-.text-box {
+.t-box {
   user-select: text;
   background-image: url(https://iili.io/3PlZRou.png), linear-gradient(0deg, rgba(46,46,46,.1) 50%, rgba(227,227,227,.1) 100%);
   padding: .85rem 1rem;
@@ -144,7 +144,7 @@ a, a:visited, a:active {
   position: relative;
 }
 
-.symbol {
+.sb {
   position: absolute;
   bottom: 15px;
   left: 49%;
