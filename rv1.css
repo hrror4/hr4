@@ -103,7 +103,7 @@
 
 .link-button:hover {
   transform: scale(1.05);
-  color: #fff;
+  color: #eee;
 }
 
 a, a:visited, a:active {
