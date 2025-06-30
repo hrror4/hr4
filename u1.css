@@ -32,6 +32,7 @@
 
   --hd-img-hover-blur: 1px;
   --hd-img-hover-bright: 1.1;
+  --hd-img-hover-scale: 1.01;
 }
 
 @keyframes fadeInChat {
@@ -121,7 +122,7 @@
   line-height: 1.4;
   color: var(--bubble-color);
   word-wrap: break-word;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
@@ -152,10 +153,6 @@
   animation: fadeInUp var(--fade-in-up-duration) var(--fade-in-up-easing) forwards;
 }
 
-.no, .nte, .sub, .p, .nte-img {
-  animation: fadeInUp var(--fade-in-up-duration) var(--fade-in-up-easing) forwards;
-}
-
 .no {
   user-select: text;
   margin: 1.5rem 0 0.35rem;
@@ -179,6 +176,8 @@
   user-select: text;
   margin: 1rem 0 2rem;
   text-align: justify;
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in;
 }
 
 .nte-img {
@@ -203,9 +202,10 @@
   border: var(--hd-img-border);
   box-shadow: var(--hd-img-boxshadow);
   filter: brightness(1.05);
-  transition: filter 0.4s ease, transform 0.4s ease;
+  transition: filter 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .hd-img:hover {
   filter: blur(var(--hd-img-hover-blur)) brightness(var(--hd-img-hover-bright));
+  transform: scale(var(--hd-img-hover-scale));
 }
