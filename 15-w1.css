@@ -86,11 +86,11 @@
   resize: none;
   border: none;
   outline: none;
-  font-size: 14.5px;
+  font-size: 14px;
   font-family: var(--font-main);
   color: var(--color-text);
   background: transparent;
-  padding: 6px 0;
+  padding: 6px;
   transition: background var(--transition-fast);
 }
 .reply-input:focus {
