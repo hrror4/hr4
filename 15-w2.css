@@ -92,7 +92,7 @@
 /* Textarea */
 .reply-input {
   width: 100%;
-  min-height: 100px;
+  min-height: 70px;
   resize: none;
   border: none;
   outline: none;
