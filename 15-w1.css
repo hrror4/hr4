@@ -71,6 +71,14 @@
   display: block;
 }
 
+/* Username */
+.reply-username {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: var(--color-text);
+}
+
 /* ================= Main Input ================= */
 .reply-main {
   flex: 1;
