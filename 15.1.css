@@ -190,7 +190,7 @@
 }
 #brownie .note.bottom {
   --note-rotate: -1deg;
-  top: 70px;
+  top: 72px;
   right: -40px;
   animation: noteFloat 3.5s ease-in-out infinite;
 }
