@@ -82,11 +82,11 @@
 /* Textarea */
 .reply-input {
   width: 100%;
-  min-height: 70px;
+  min-height: 80px;
   resize: none;
   border: none;
   outline: none;
-  font-size: 14px;
+  font-size: 13px;
   font-family: var(--font-main);
   color: var(--color-text);
   background: transparent;
@@ -120,9 +120,9 @@
 .btn-icon {
   background: none;
   border: none;
-  font-size: 18.5px;
+  font-size: 17px;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 .btn-icon:hover {
