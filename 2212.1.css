@@ -79,7 +79,7 @@ body {
 .title {
   font-size: 24px;
   font-weight: 500;
-  margin: 10px 0;
+  margin: 6px 0 10px;
   font-family: var(--font-deco);
   color: var(--text-main);
   transition: color var(--transition-slow);
