@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cactus+Classical+Serif&family=Thasadith:ital,wght@0,700;1,700&family=IBM+Plex+Sans+Thai:wght@400;600&display=swap');
+
+/* ---------------- ROOT ---------------- */
+:root {
+  /* Fonts */
+  --font-main: "Amiri", "Thasadith", "IBM Plex Sans Thai", serif;
+  --font-deco: "Cactus Classical Serif", Thasadith, serif;
+
+  /* Colors */
+  --bg-card: #f7f7f7;
+  --bg-line: #ededed;
+  --bg-progress: #ddd;
+  --bg-progress-fill: #444;
+
+  --text-main: #111;
+  --text-sub: #666;
+
+  /* Style */
+  --radius: 12px;
+  --shadow: 0 8px 26px rgba(0,0,0,0.15);
+
+  /* Transitions */
+  --transition-fast: 0.25s ease;
+  --transition-mid: 0.35s ease;
+  --transition-slow: 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* ---------------- BODY ---------------- */
+body {
+  background: #131313;
+}
+
+/* ---------------- CARD ---------------- */
+.card {  
+  font-family: var(--font-main);
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-card {
+  width: 380px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- COVER ---------------- */
+.cover img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+  filter: brightness(0.95) grayscale(17%) contrast(1.025) blur(0.5px);
+  box-shadow: inset 0 0 60px rgba(255,255,255,0.2);
+  transition: filter var(--transition-slow), transform var(--transition-slow);
+}
+.m-card:hover .cover img {
+  filter: brightness(1.05) grayscale(10%) contrast(1.05) blur(0.25px);
+  transform: scale(1.015);
+}
+
+/* ---------------- INFO ---------------- */
+.info {
+  padding: 16px;
+  position: relative;
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-sub);
+}
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+  font-family: var(--font-deco);
+  color: var(--text-main);
+  transition: color var(--transition-slow);
+}
+.title:hover {
+  color: #000;
+}
+.note {
+  font-size: 12px;
+  color: var(--text-sub);
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  opacity: 0.85;
+  transition: opacity var(--transition-fast);
+}
+.note:hover {
+  opacity: 1;
+}
+
+/* ---------------- CONTENT ---------------- */
+.s-tt,
+.p {
+  margin: 0 20px 20px;
+  font-family: var(--font-deco);
+  color: var(--text-main);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+.s-tt {
+  font-size: 12.5px;
+  margin: -22px 20px 40px;
+}
+.p {
+  font-size: 13.5px;
+  text-align: justify;
+}
+
+/* ---------------- PLAYER ---------------- */
+.line {
+  background: var(--bg-line);
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  margin-top: 4px;
+  position: relative;
+}
+.r-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-sub);
+  position: absolute;
+  right: 16px;
+  top: 8px;
+}
+.ft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-family: var(--font-deco);
+  color: var(--text-sub);
+}
