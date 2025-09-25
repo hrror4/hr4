@@ -284,7 +284,7 @@
   position: absolute;
   left: -65px;
   bottom: 18px;
-  font: 66px var(--font-deco);
+  font: bold 66px var(--font-deco);
   color: #fff;
   filter: drop-shadow(0 0 2px black);
   transform-origin: left center;
