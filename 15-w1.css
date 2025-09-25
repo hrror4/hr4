@@ -82,11 +82,11 @@
 /* Textarea */
 .reply-input {
   width: 100%;
-  min-height: 80px;
+  min-height: 100px;
   resize: none;
   border: none;
   outline: none;
-  font-size: 12.5px;
+  font-size: 12.7px;
   font-family: var(--font-main);
   color: var(--color-text);
   background: #eee;
