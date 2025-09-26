@@ -30,6 +30,7 @@
 /* กล่องหลัก */
 .main-box {
   position: relative;
+  margin: auto;
   width: 450px;
   background: var(--bg-card);
   border-radius: var(--radius);
