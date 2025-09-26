@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/mbchickenscratch');
+
+body {
+  background: #131313;
+}
+
+.box {
+  font-family: Inter, Anuphan, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.55;
+  background: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+    /* กล่องหลัก */
+    .main-box {
+      position: relative;
+      width: 450px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: visible; /* ให้ float ลอยได้ */
+    }
+
+    /* Profile section */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      padding: 13px 16px;
+      border-bottom: 1px solid #ddd;
+    }
+    .profile img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile .name {
+      font-size: 25px;
+      font-weight: 600;
+      font-family: 'MBChickenScratch', sans-serif;
+    }
+
+    /* Content section */
+    .content {
+      padding: 20px 25px;
+      font-size: 14.5px;
+      color: #333;
+    }
+
+    .note {
+      padding: 5px 25px 15px;
+      font-size: 13px;
+      font-style: italic;
+      text-align: right;
+      color: #333;
+    }
+
+    /* Post section */
+    .post {
+      border-top: 1px solid #ddd;
+      padding: 15px 25px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .post img {
+      aspect-ratio: 1 / 1;
+      width: 75px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+/* Bubble (แทน float-box เดิม) */
+.bubble {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  max-width: 190px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 8px 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  font-size: 13.25px;
+  line-height: 1.5;
+}
+
+/* หางของบับเบิล */
+.bubble::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  bottom: -7px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ข้อความใน bubble */
+.bubble p {
+  margin: 0;
+  font-weight: 600;
+  color: #111;
+}
+.bubble span {
+  display: block;
+  font-size: 12.7px;
+  color: #666;
+  font-weight: 400;
+}
