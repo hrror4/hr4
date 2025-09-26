@@ -22,7 +22,7 @@
 }
 
 .box {
-  margin: auto;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -113,7 +113,7 @@
 
 /* Post */
 .post {
-  border-top: 1px dashed #ccc;
+  border-top: 0px dashed #ccc;
   padding: 15px;
   display: flex;
   gap: 15px;
