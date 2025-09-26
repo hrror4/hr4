@@ -5,7 +5,7 @@
   --font-main: Inter, Anuphan, sans-serif;
   --font-hand: 'MBChickenScratch', cursive;
   --bg-body: #131313;
-  --bg-card: #f9f9f9; /* จากขาวล้วน → เทาจาง */
+  --bg-card: #f9f9f9;
   --text-main: #151515;
   --text-sub: #333;
   --radius: 16px;
@@ -27,7 +27,6 @@
   padding: 40px;
 }
 
-/* กล่องหลัก */
 .main-box {
   position: relative;
   margin: auto;
@@ -39,13 +38,11 @@
   animation: fadeInUp 0.8s var(--transition) forwards;
 }
 
-/* Animation เข้า */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(25px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Profile */
 .profile {
   display: flex;
   align-items: center;
@@ -53,15 +50,11 @@
   padding: 12px 16px;
   border-bottom: 2px solid #ddd;
 }
-/* Avatar */
 .avatar-wrap {
   position: relative;
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-  padding: 3px;
-  background: radial-gradient(circle, rgba(200,200,200,0.25), transparent 70%);
-  box-shadow: 0 0 10px rgba(0,0,0,0.05), inset 0 0 10px rgba(255,255,255,0.2);
+  border-radius: 100%;
 }
 .avatar-wrap img {
   width: 100%;
