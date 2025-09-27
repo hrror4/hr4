@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); 
 @import url('https://fonts.cdnfonts.com/css/mbchickenscratch');
 
-body {
-  background: #131313;
-}
 .box {  
   font-family: Inter, Anuphan, sans-serif;
   font-size: 13px;
@@ -23,14 +20,14 @@ body {
   position: relative;
   width: 450px;
   margin: auto;
-  background: rgba(255,255,255,0.95); /* เทาอ่อนแทนขาว */
+  background: rgba(255,255,255,0.96); /* เทาอ่อนแทนขาว */
   border-radius: 16px;
 
   /* เงาเทาชัด + ฟุ้งนุ่ม */
   box-shadow: 
-    0 6px 18px rgba(0, 0, 0, 0.18),
-    0 10px 32px rgba(0, 0, 0, 0.12),
-    inset 0 0 25px rgba(0, 0, 0, 0.06);
+    0 6px 18px rgba(0,0,0,0.18),
+    0 10px 32px rgba(0,0,0,0.12),
+    inset 0 0 25px rgba(0,0,0,0.06);
 
   overflow: visible;
   animation: fadeInUp 0.8s 0.3s ease forwards;
@@ -64,7 +61,6 @@ body {
   padding: 12px 16px;
 }
 
-/* ใช้ reply-avatar */
 .avatar {
   width: 45px;
   height: 45px;
