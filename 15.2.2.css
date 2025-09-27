@@ -20,14 +20,16 @@
   position: relative;
   width: 450px;
   margin: auto;
-  background: rgba(255,255,255,0.96); /* เทาอ่อนแทนขาว */
+
+  /* พื้นหลัง radial เทา–ขาว */
+  background: radial-gradient(circle at center, #ffffff 0%, #f1f1f1 55%, #e4e4e4 100%);
   border-radius: 16px;
 
   /* เงาเทาชัด + ฟุ้งนุ่ม */
   box-shadow: 
     0 6px 18px rgba(0,0,0,0.18),
     0 10px 32px rgba(0,0,0,0.12),
-    inset 0 0 25px rgba(0,0,0,0.06);
+    inset 0 0 25px rgba(255,255,255,0.5);
 
   overflow: visible;
   animation: fadeInUp 0.8s 0.3s ease forwards;
