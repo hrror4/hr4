@@ -98,8 +98,8 @@
   50% { transform: scale(1.04); }
 }
 
-.di1 { border: none; border-top: 1px solid #ddd; margin: 0; }
-.di2 { border: none; border-top: 1px dashed #ccc; margin: 0; }
+.di1 { border: none; border-top: 1px solid #ddd; margin: 0 3px; }
+.di2 { border: none; border-top: 1px dashed #ccc; margin: 0 3px; }
 
 .content {
   padding: 20px 25px;
