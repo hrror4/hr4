@@ -71,12 +71,12 @@
 }
 
 /* ========== Divider ========== */
-.divider {
+.di1 {
   border: none;
   border-top: 1px solid #ddd;
   margin: 0; /* ชิดซ้าย-ขวา */
 }
-.divider2 {
+.di2 {
   border: none;
   border-top: 1px dashed #ccc;
   margin: 0; /* ชิดซ้าย-ขวา */
