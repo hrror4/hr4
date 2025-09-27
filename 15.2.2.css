@@ -125,7 +125,7 @@
 }
 .gallery img:hover {
   transform: scale(1.08) rotate(1deg);
-  filter: brightness(1.125);
+  filter: brightness(1.14);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
