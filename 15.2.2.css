@@ -131,7 +131,7 @@
 .gallery {
   padding: 15px;
   display: flex;
-  gap: 8px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 .gallery img {
