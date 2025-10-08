@@ -1,31 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Thasadith:wght@700&display=swap');
 
-:root {
-  --gold: #d1a85a;
-  --gold-light: #e9d6a1;
-  --gold-text: #e5c98b;
-  --dark-main: #0a0404;
-  --deep-red: #4a1010;
-  --soft-red: #912626;
-  --accent-red: #b24444;
-  --radius: 24px;
-  --radius-item: 14px;
-  --blur-bg: 14px;
-  --font-cn: 'Noto Serif SC', 'Thasadith', serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
 
 #m-wp {
   background: radial-gradient(circle at center, #3b0f0f, #090303 85%);
   color: #fff;
-  font-family: var(--font-cn);
+  font-family: 'Noto Serif SC', 'Thasadith', serif;
   overflow-x: hidden;
   min-height: 100vh;
   position: relative;
 }
 
+/* WRAPPER */
 #p-wp {
+  background-image: var(--bg-img);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,29 +31,29 @@
   animation: fadeIn 1s ease;
 }
 
+/* CONTAINER */
 #p-ctn {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 725px;
   gap: 30px;
   padding: 50px 40px;
   background: linear-gradient(135deg, rgba(30,10,10,0.9), rgba(75,25,25,0.65));
-  border-radius: var(--radius);
-  backdrop-filter: blur(var(--blur-bg)) brightness(1.15);
+  border-radius: 24px;
+  backdrop-filter: blur(14px) brightness(1.15);
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.9), 0 0 28px rgba(180,60,60,0.35);
   outline: 2px solid rgba(160,80,80,0.2);
   animation: fadeScale 1.2s ease;
-  flex-wrap: wrap;
 }
 
-/* ================= Chinese Border ================= */
 .p-cb {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 4;
-  border-radius: var(--radius);
+  border-radius: 24px;
   border: 1.5px solid rgba(209,168,90,0.2);
   box-shadow: 0 0 12px rgba(209,168,90,0.2), inset 0 0 8px rgba(255,220,120,0.1);
 }
@@ -79,7 +71,6 @@
 .cn-bl { bottom: 10px; left: 10px; border-right: none; border-top: none; }
 .cn-br { bottom: 10px; right: 10px; border-left: none; border-top: none; }
 
-/* ================= Corner Frame ================= */
 .p-cnf {
   position: absolute;
   width: 46px;
@@ -93,7 +84,7 @@
 .cf-bl { bottom: 10px; left: 10px; border-bottom: 2px solid rgba(200,170,100,0.4); border-left: 2px solid rgba(200,170,100,0.4); }
 .cf-br { bottom: 10px; right: 10px; border-bottom: 2px solid rgba(200,170,100,0.4); border-right: 2px solid rgba(200,170,100,0.4); }
 
-/* ================= Logo ================= */
+/* LOGO */
 .logo-img {
   position: absolute;
   top: -90px;
@@ -122,7 +113,7 @@
   position: absolute;
   width: 5px;
   height: 5px;
-  background: radial-gradient(circle, var(--gold-light), transparent);
+  background: radial-gradient(circle, #e9d6a1, transparent);
   border-radius: 50%;
   animation: particleFloat 3s linear infinite;
 }
@@ -134,13 +125,13 @@
   animation-delay: 1.5s;
 }
 
-/* ================= Vertical Banner ================= */
+/* VERTICAL BANNER */
 .vtc-bn {
   order: -1;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  padding: 18px 8px;
-  border-left: 3px solid var(--gold);
+  padding: 16px 6px;
+  border-left: 3px solid #d1a85a;
   background: linear-gradient(to bottom, rgba(255,255,255,0.08), transparent 100%);
   border-radius: 12px;
   box-shadow: inset 0 0 10px rgba(255,255,255,0.1),
@@ -149,24 +140,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   animation: fadeInLeft 1s ease;
 }
 .bn-tt {
   font-size: 30px;
-  color: var(--gold-light);
+  color: #f3e1b2;
   letter-spacing: 3px;
   margin-left: -5px;
   text-shadow: 0 0 8px rgba(255,220,120,0.35);
 }
 .bn-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(255,255,255,0.8);
   letter-spacing: 5px;
   text-shadow: 0 0 6px rgba(255,220,120,0.15);
 }
 
-/* ================= Circle ================= */
+/* CIRCLE FRAME */
 .c-fr {
   position: relative;
   flex: 1 1 320px;
@@ -185,7 +176,6 @@
 }
 
 .c-in {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,7 +200,7 @@
   z-index: -1;
 }
 
-/* ================= Gift List ================= */
+/* GIFT LIST */
 .it-lst {
   display: flex;
   flex-direction: column;
@@ -229,7 +219,7 @@
   align-items: center;
   padding: 10px 15px;
   border: 1px solid rgba(209,168,90,0.15);
-  border-radius: var(--radius-item);
+  border-radius: 14px;
   background: rgba(255,255,255,0.04);
   transition: all 0.35s ease;
 }
@@ -248,7 +238,7 @@
   filter: drop-shadow(0 0 10px rgba(180,60,60,0.6));
 }
 .bx-info h3 {
-  color: var(--gold-light);
+  color: #e9d6a1;
   margin-bottom: 6px;
   font-size: 18px;
 }
@@ -259,7 +249,6 @@
   max-width: 230px;
 }
 
-/* ================= Animations ================= */
 @keyframes fadeIn { from{opacity:0;transform:translateY(20px);} to{opacity:1;transform:translateY(0);} }
 @keyframes fadeInLeft { from{opacity:0;transform:translateX(-30px);} to{opacity:1;transform:translateX(0);} }
 @keyframes fadeScale { from{opacity:0;transform:scale(0.85);} to{opacity:1;transform:scale(1);} }
