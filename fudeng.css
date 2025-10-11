@@ -1,49 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Thasadith:wght@700&display=swap');
 
-#m-wp {  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background: radial-gradient(circle at center, #3b0f0f, #090303 85%);
-  color: #fff;
-  font-family: 'Noto Serif SC', 'Thasadith', serif;
-  overflow-x: hidden;
-  min-height: 100vh;
-  position: relative;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* WRAPPER */
-#p-wp {
+.m-wp {
+  padding: 100px;
+  overflow: hidden;
+  filter: grayscale(10%) contrast(1.1) brightness(1.05);
   background-image: var(--bg-img);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   filter: contrast(1.1) brightness(1.12) saturate(1.15);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 140px;
-  animation: fadeIn 1s ease;
-}
+  font-family: 'Noto Serif SC', 'Thasadith', serif;
+  font-size: 12.5px;
+  color: #e9d6a1;
+  line-height: 1.6}
 
-/* CONTAINER */
-#p-ctn {
+.p-box {
   position: relative;
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 725px;
-  gap: 30px;
-  padding: 50px 40px;
+  gap: 40px;
+  padding: 70px 35px 50px;
+  margin: auto; 
+  max-width: 650px;
+  height: 100%;   
   background: linear-gradient(135deg, rgba(30,10,10,0.9), rgba(75,25,25,0.65));
-  border-radius: 24px;
+  border-radius: 24px; 
+  border: 1px solid #222; 
   backdrop-filter: blur(14px) brightness(1.15);
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.9), 0 0 28px rgba(180,60,60,0.35);
-  outline: 2px solid rgba(160,80,80,0.2);
-  animation: fadeScale 1.2s ease;
-}
-
+  outline: 2px solid rgba(160,80,80,0.2);}
+  
 .p-cb {
   position: absolute;
   inset: 0;
@@ -55,8 +44,8 @@
 }
 .p-ccn {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border: 1.2px solid rgba(209,168,90,0.35);
   border-radius: 50%;
   pointer-events: none;
@@ -69,8 +58,8 @@
 
 .p-cnf {
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   border-color: rgba(200,170,100,0.7);
   z-index: 3;
   pointer-events: none;
@@ -80,7 +69,6 @@
 .cf-bl { bottom: 10px; left: 10px; border-bottom: 2px solid rgba(200,170,100,0.4); border-left: 2px solid rgba(200,170,100,0.4); }
 .cf-br { bottom: 10px; right: 10px; border-bottom: 2px solid rgba(200,170,100,0.4); border-right: 2px solid rgba(200,170,100,0.4); }
 
-/* LOGO */
 .logo-img {
   position: absolute;
   top: -90px;
@@ -97,7 +85,7 @@
   display: block;
 }
 
-/* ✨ โลโก้มีเศษทองปลิว */
+/* ✨ */
 .logo-ptc {
   position: absolute;
   inset: 0;
@@ -121,12 +109,15 @@
   animation-delay: 1.5s;
 }
 
-/* VERTICAL BANNER */
+/* left */
 .vtc-bn {
   order: -1;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  padding: 16px 6px;
+  width: fit-content;
+  margin-top: 25px;
+  margin-bottom: auto;
+  padding: 15px 3px;
   border-left: 3px solid #d1a85a;
   background: linear-gradient(to bottom, rgba(255,255,255,0.08), transparent 100%);
   border-radius: 12px;
@@ -136,28 +127,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  animation: fadeInLeft 1s ease;
+  gap: 8px;
+  animation: fadeInLeft 2s ease;
 }
 .bn-tt {
-  font-size: 30px;
-  color: #f3e1b2;
+  font-size: 27px;
+  color: #e9d6a1;
   letter-spacing: 3px;
-  margin-left: -5px;
+  margin-left: -7px;
   text-shadow: 0 0 8px rgba(255,220,120,0.35);
 }
 .bn-desc {
-  font-size: 13px;
+  font-size: 11.5px;
   color: rgba(255,255,255,0.8);
   letter-spacing: 5px;
   text-shadow: 0 0 6px rgba(255,220,120,0.15);
 }
 
-/* CIRCLE FRAME */
+/* right */
 .c-fr {
   position: relative;
-  flex: 1 1 320px;
-  max-width: 525px;
+  max-width: 575px;
   aspect-ratio: 1/1;
   background: radial-gradient(circle, #4a1515 0%, #0a0a0a 80%);
   border-radius: 50%;
@@ -172,13 +162,13 @@
 }
 
 .c-in {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 25px;
+  padding-top: 95px;
   margin: 40px 15px 100px;
   background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 80%);
   border-radius: 50%;
@@ -196,14 +186,13 @@
   z-index: -1;
 }
 
-/* GIFT LIST */
 .it-lst {
   display: flex;
   flex-direction: column;
   margin-top: 5px;
   gap: 18px;
   width: 100%;
-  height: 80%;
+  height: 100%;
   padding: 12px 15px;
   overflow-y: auto;
   mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 80%, transparent 100%);
@@ -213,7 +202,7 @@
 .it-bx {
   display: flex;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 15px 15px;
   border: 1px solid rgba(209,168,90,0.15);
   border-radius: 14px;
   background: rgba(255,255,255,0.04);
@@ -224,7 +213,7 @@
   box-shadow: 0 0 20px rgba(160,60,60,0.3), inset 0 0 12px rgba(209,168,90,0.2);
 }
 .it-bx img {
-  width: 160px;
+  max-width: 140px;
   border-radius: 12px;
   filter: drop-shadow(0 0 4px rgba(255,255,255,0.15));
   transition: all 0.35s ease;
@@ -240,11 +229,10 @@
 }
 .bx-info p {
   color: #dcdcdc;
-  font-size: 13px;
-  line-height: 1.5em;
   max-width: 230px;
 }
 
+/* Animations */
 @keyframes fadeIn { from{opacity:0;transform:translateY(20px);} to{opacity:1;transform:translateY(0);} }
 @keyframes fadeInLeft { from{opacity:0;transform:translateX(-30px);} to{opacity:1;transform:translateX(0);} }
 @keyframes fadeScale { from{opacity:0;transform:scale(0.85);} to{opacity:1;transform:scale(1);} }
