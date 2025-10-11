@@ -72,11 +72,11 @@
 .logo-img {
   position: absolute;
   top: -90px;
-  left: 65%;
+  left: 75%;
   transform: translateX(-50%);
   z-index: 5;
   animation: floatLogo 5s ease-in-out infinite;
-  width: 140px;
+  width: 260px;
   height: auto;
 }
 .logo-img img {
