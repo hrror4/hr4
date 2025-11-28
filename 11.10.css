@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Thasadith:wght@700&display=swap');
 
 .m-wp {
-  min-height: 100vh;
   box-sizing: border-box; 
   border-radius: 7px;
-  padding: 10rem 2rem 8rem;
+  min-height: 100vh;
+  padding: 15rem 2rem 8rem;
   overflow: hidden;
   background-image: var(--bg-img);
   background-position: top right;
-  background-size: cover;
-  background-attachment: no-fixed;
+  background-size: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   filter: grayscale(5%) contrast(1.1) brightness(1.12) saturate(1.15);
