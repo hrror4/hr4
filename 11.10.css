@@ -8,8 +8,8 @@
   padding: 155px 40px 250px;
   overflow: hidden;
   background-image: var(--bg-img);
-  background-position: top center;
-  background-size: 100%;
+  background-position: top right;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
