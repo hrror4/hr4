@@ -204,7 +204,7 @@
 .it-bx {
   display: flex;
   align-items: center;
-  padding: 10px 15px 15px;
+  padding: 0;
   border: 1px solid rgba(209,168,90,0.15);
   border-radius: 14px;
   box-sizing: border-box; 
