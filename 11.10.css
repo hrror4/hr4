@@ -4,7 +4,8 @@
 
 .m-wp {
   min-height: 100vh;
-  padding: 155px 40px 100px;
+  border-radius: 7px;
+  padding: 155px 40px;
   overflow: hidden;
   background-image: var(--bg-img);
   background-position: top center;
@@ -156,7 +157,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 17px;
   box-shadow: 0 0 45px rgba(150,50,50,0.25), inset 0 0 25px rgba(255,200,150,0.08);
   overflow: hidden;
   animation: glowPulse 8s ease-in-out infinite alternate;
@@ -169,8 +170,8 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 95px;
-  margin: 40px 10px 70px;
+  padding-top: 75px;
+  margin: 40px 10px 60px;
   background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 80%);
   border-radius: 50%;
   box-shadow: inset 0 0 25px rgba(255,220,150,0.05),
