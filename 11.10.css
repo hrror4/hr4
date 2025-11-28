@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Thasadith:wght@700&display=swap');
 
 .m-wp {
+  box-sizing: border-box; 
   min-height: 100vh;
   border-radius: 7px;
   padding: 200px 40px 250px;
@@ -206,6 +207,7 @@
   padding: 10px 15px 15px;
   border: 1px solid rgba(209,168,90,0.15);
   border-radius: 14px;
+  box-sizing: border-box; 
   background: rgba(255,255,255,0.04);
   transition: all 0.35s ease;
 }
