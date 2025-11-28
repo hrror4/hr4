@@ -9,7 +9,7 @@
   background-image: var(--bg-img);
   background-position: top right;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: no-fixed;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   filter: grayscale(5%) contrast(1.1) brightness(1.12) saturate(1.15);
