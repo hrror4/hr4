@@ -4,7 +4,7 @@
   box-sizing: border-box; 
   min-height: 100vh;
   border-radius: 7px;
-  padding: 5rem 2rem 4rem;
+  padding: 10rem 2rem 8rem;
   overflow: hidden;
   background-image: var(--bg-img);
   background-position: top right;
