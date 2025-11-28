@@ -3,7 +3,7 @@
 .m-wp {
   box-sizing: border-box; 
   border-radius: 7px;
-  min-height: 100vh;
+  height: 100%;
   padding: 15rem 2rem 8rem;
   overflow: hidden;
   background-image: var(--bg-img);
