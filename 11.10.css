@@ -5,7 +5,7 @@
 .m-wp {
   min-height: 100vh;
   border-radius: 7px;
-  padding: 155px 40px;
+  padding: 155px 40px 250px;
   overflow: hidden;
   background-image: var(--bg-img);
   background-position: top center;
