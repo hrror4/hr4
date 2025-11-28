@@ -73,7 +73,7 @@
 
 .logo-img {
   position: absolute;
-  top: -90px;
+  top: -100px;
   left: 75%;
   transform: translateX(-50%);
   z-index: 5;
