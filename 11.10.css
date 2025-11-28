@@ -9,7 +9,7 @@
   overflow: hidden;
   background-image: var(--bg-img);
   background-position: top center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   filter: grayscale(5%) contrast(1.1) brightness(1.12) saturate(1.15);
