@@ -4,12 +4,11 @@
   box-sizing: border-box; 
   border-radius: 7px;
   height: 100%;
-  padding: 15rem 2rem 8rem;
+  padding: 200px 40px 100px;
   overflow: hidden;
   background-image: var(--bg-img);
   background-position: top right;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   filter: grayscale(5%) contrast(1.1) brightness(1.12) saturate(1.15);
