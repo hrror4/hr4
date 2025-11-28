@@ -4,7 +4,7 @@
   box-sizing: border-box; 
   min-height: 100vh;
   border-radius: 7px;
-  padding: 200px 40px 250px;
+  padding: 200px 40px;
   overflow: hidden;
   background-image: var(--bg-img);
   background-position: top right;
@@ -19,7 +19,7 @@
   line-height: 1.6}
 
 .p-box {  
-  transform: scale(0.95);
+  transform: scale(0.925);
   position: relative;
   box-sizing: border-box;
   display: flex;
