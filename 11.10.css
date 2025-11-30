@@ -237,9 +237,9 @@
 }
 
 .bx-cv {
-  margin: 1rem;
+  margin: 1rem 1rem 1.25rem;
   font-family: 'Noto Serif SC', 'Thasadith', serif;
-  font-size: 14px;
+  font-size: 14.5px;
   color: #e9d6a1;
   line-height: 1.6
 }
