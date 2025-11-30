@@ -7,6 +7,7 @@
   height: 100%;
   padding: 200px 40px 100px;
   overflow: hidden;
+  -webkit-mask-image: -webkit-gradient(linear, center 60%, center 100%, from(black), to(transparent));
   background-image: var(--bg-img);
   background-position: top right;
   background-size: cover;
