@@ -236,6 +236,14 @@
   word-break: break-word;
 }
 
+.bx-cv {
+  margin: 1rem;
+  font-family: 'Noto Serif SC', 'Thasadith', serif;
+  font-size: 15px;
+  color: #e9d6a1;
+  line-height: 1.7
+}
+
 /* Animations */
 @keyframes fadeIn { from{opacity:0;transform:translateY(20px);} to{opacity:1;transform:translateY(0);} }
 @keyframes fadeInLeft { from{opacity:0;transform:translateX(-30px);} to{opacity:1;transform:translateX(0);} }
