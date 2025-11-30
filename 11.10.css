@@ -14,7 +14,7 @@
   background-blend-mode: multiply;
   filter: grayscale(5%) contrast(1.1) brightness(1.12) saturate(1.15);
   font-family: 'Noto Serif SC', 'Thasadith', serif;
-  font-size: 13px;
+  font-size: 13.5px;
   color: #e9d6a1;
   line-height: 1.6}
 
@@ -228,16 +228,12 @@
 .bx-info h3 {
   color: #e9d6a1;
   margin-bottom: 6px;
-  font-size: 18px;
+  font-size: 19px;
 }
 .bx-info p {
   color: #dcdcdc;
   max-width: 245px;
   word-break: break-word;
-}
-
-.bx-info c {
-  text-align: center;
 }
 
 .bx-info cv {
