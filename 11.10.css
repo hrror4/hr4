@@ -305,6 +305,45 @@
   margin-top: 2px;
 }
 
+/* ✨ เอฟเฟกต์หมึกจีน + แสงฟุ้ง */
+
+.fx-ink {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 20% 30%, rgba(120,40,30,0.18), transparent 55%),
+              radial-gradient(circle at 80% 70%, rgba(160,60,50,0.15), transparent 60%),
+              radial-gradient(circle at 60% 20%, rgba(255,140,90,0.10), transparent 70%);
+  mix-blend-mode: screen;
+  filter: blur(22px);
+  animation: inkFloat 10s ease-in-out infinite alternate;
+}
+
+.fx-light {
+  position: absolute;
+  inset: -10px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255,180,120,0.08), transparent 70%),
+    radial-gradient(circle at 10% 80%, rgba(200,100,80,0.08), transparent 70%),
+    radial-gradient(circle at 90% 40%, rgba(255,200,160,0.05), transparent 75%);
+  mix-blend-mode: overlay;
+  filter: blur(30px);
+  opacity: 0.75;
+  animation: lightShift 14s ease-in-out infinite alternate;
+}
+
+/* animations */
+@keyframes inkFloat {
+  0%   { transform: translate(0,0) scale(1); opacity: .85; }
+  100% { transform: translate(-20px,-25px) scale(1.08); opacity: .65; }
+}
+
+@keyframes lightShift {
+  0%   { transform: translateY(0); opacity: .7; }
+  100% { transform: translateY(-18px); opacity: .9; }
+}
+
 /* Animations */
 @keyframes fadeIn { from{opacity:0;transform:translateY(20px);} to{opacity:1;transform:translateY(0);} }
 @keyframes fadeInLeft { from{opacity:0;transform:translateX(-30px);} to{opacity:1;transform:translateX(0);} }
